@@ -24,7 +24,8 @@ var/
 # Sphinx documentation
 docs/_build/
 
-/images
+/images/*.jpg
+/images/*.svg
 /d
 
 .idea/

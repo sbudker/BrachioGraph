@@ -30,7 +30,7 @@ servo_2_angle_pws2 = [
     [ 36, 1030],
     [ 54, 1180],
     [ 72, 1340],
-    [ 90, 1490],
+    [ 90, 1480],
     [108, 1640],
     [126, 1830],
     [144, 2000],
@@ -50,8 +50,8 @@ bg = BrachioGraph(
     servo_1_angle_pws=servo_1_angle_pws1,
     servo_2_angle_pws=servo_2_angle_pws2,
     # pulse-widths for pen up/down
-    pw_down=1200,
-    pw_up=1850,
+    pw_up=1500,
+    pw_down=1100,
 )
 
 bg.box()
