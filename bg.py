@@ -15,7 +15,7 @@ servo_1_angle_pws1 = [
     [-144, 2250],
     [-126, 2050],
     [-108, 1860],
-    [ -90, 1690],
+    [ -90, 1720],
     [ -72, 1530],
     [ -54, 1350],
     [ -36, 1190],
@@ -42,6 +42,8 @@ bg = BrachioGraph(
     # the lengths of the arms
     inner_arm=8,
     outer_arm=8,
+    servo_1_centre=1720,
+    servo_2_centre=1480,
     # the drawing area
     bounds=(-8, 4, 8, 13),
     # angles in degrees and corresponding pulse-widths for the two arm servos
@@ -51,6 +53,9 @@ bg = BrachioGraph(
     pw_down=1200,
     pw_up=1850,
 )
+
+bg.box()
+#bg.plot_file("test-patterns/accuracy.json")
 
 
 # A "naively" calibrated plotter definition. We assume the default 10ms
